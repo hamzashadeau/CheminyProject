@@ -14,6 +14,23 @@ header{
   position: sticky;
   top: 0;
 }
+.bg {
+  /* The image used */
+  background-image:url("../image/backgr.png");
+  /* Full height */
+  height: 90%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .bg{
+    flex: 50%;
+    max-width:100%;  }
+}
+
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -131,7 +148,10 @@ body{
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ 
 }
+
+  
 
 /* Modal Content/Box */
 .modal-content {
